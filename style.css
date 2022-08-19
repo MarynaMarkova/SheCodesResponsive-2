@@ -55,6 +55,7 @@ p {
 .primary-link:hover {
   background-color: white;
   color: var(--primary-color);
+  border: 1px solid var(--primary-color);
 }
 
 .secondary-link {

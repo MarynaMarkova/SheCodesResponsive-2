@@ -5,78 +5,67 @@
 }
 
 body {
-  margin-top: 100px !important;
+  margin-top: 100px;
 }
 
 h1,
 h2,
 h3 {
-  text-align: center;
   margin: 0;
 }
 
 h1 {
-  font-size: 96px !important;
+  font-size: 96px;
 }
 
 h2 {
-  font-size: 48px !important;
+  font-size: 48px;
 }
 
 h3 {
-  font-size: 24px !important;
+  font-size: 24px;
   opacity: 0.7;
 }
 
 p {
- 
-  border-radius: 4px;
   font-size: 18px;
   line-height: 1.5;
-  text-align: left;
 }
 
 .navigation-links {
   display: flex;
-  margin: 40px auto;
+  margin-top: 40px;
   justify-content: center;
-  
 }
 
-.navigation-links a,
-.primary-link {
+.navigation-links a {
   margin: 20px;
+}
+
+.primary-link {
   border-radius: 4px;
   padding: 20px 15px;
   text-decoration: none;
   text-transform: capitalize;
-}
-
-.contact-link,
-.primary-link {
   background: var(--primary-color);
   box-shadow: var(--box-shadow);
   color: white;
 }
 
-.about-link {
+.secondary-link {
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
 }
 
-.homepage-link {
-  color: var(--primary-color);
-  text-align: center;
-  display: block;
-}
-
 .about-paragraphs {
-  display: flex;
   margin: 30px 0;
 }
 
 .about-paragraphs p {
-  text-align: center;
   margin: 10px;
 }
 
@@ -92,16 +81,23 @@ p {
   text-decoration: underline;
 }
 
-h2.mb-3 {
-  text-align: left; !important
+.secondary-link:hover {
+  background-color: var(--primary-color);
+  color: white;
 }
 
-.lorem {
-background-color: none; !important
+@media (max-width: 576px) {
+  h2 {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+  }
+  .project-link {
+    display: block;
+    text-align: center;
+    margin: 0 20px;
+  }
 }
-
-.primary-link {
-margin: 0;}
-
-#contact {
-margin-top: 40px;}
